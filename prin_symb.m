@@ -15,7 +15,8 @@ Print["Use the following Pythagorean quadruples as incoming \
 directions"];
 pythaquads = 
  Flatten[Table[{p^2 + m^2 + n^2, 2 m p, 2 n p, p^2 - (m^2 + n^2)}, {m,
-     1, 3}, {n, 1, 2}, {p, 1, 1}], 2]
+     1, 3}, {n, 1, 2}, {p, 1, 1}], 2];
+Print[pythaquads]
 bss = Subsets[pythaquads, {4}];
 
 Print["Trying " <> ToString[Length[bss]] <> 
